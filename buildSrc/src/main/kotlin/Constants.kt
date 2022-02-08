@@ -24,9 +24,8 @@ object Cucumber {
 object Dagpenger {
 
     object Biblioteker {
-        const val version = "2021.06.23-14.39.74fbb7b79fde"
+        const val version = "2021.12.14-13.01.6400e5680cb5"
         const val stsKlient = "com.github.navikt.dp-biblioteker:sts-klient:$version"
-        const val grunnbeløp = "com.github.navikt.dp-biblioteker:grunnbelop:$version"
         const val ktorUtils = "com.github.navikt.dp-biblioteker:ktor-utils:$version"
 
         object Ktor {
@@ -44,14 +43,14 @@ object Dagpenger {
             const val client = "com.github.navikt.dp-biblioteker:soap-client:$version"
         }
     }
-
-    const val Streams = "com.github.navikt:dagpenger-streams:2021.06.23-14.29.bbb62ad15d52"
-    const val Events = "com.github.navikt:dagpenger-events:2021.06.23-14.38.f9ef5d423585"
+    const val Grunnbeløp = "com.github.navikt:dp-grunnbelop:2021.06.25-11.51.bdc7c826c404"
+    const val Streams = "com.github.navikt:dagpenger-streams:2021.12.29-13.08.7857ff52b457"
+    const val Events = "com.github.navikt:dagpenger-events:2021.12.14-09.45.e24e8c813b27"
 }
 
 object Database {
     const val Postgres = "org.postgresql:postgresql:42.2.22"
-    const val Kotlinquery = "com.github.seratch:kotliquery:1.3.1"
+    const val Kotlinquery = "com.github.seratch:kotliquery:1.6.1"
     const val Flyway = "org.flywaydb:flyway-core:7.10.0"
     const val HikariCP = "com.zaxxer:HikariCP:4.0.3"
     const val VaultJdbc = "no.nav:vault-jdbc:1.3.7"
@@ -118,7 +117,7 @@ object Konfig {
 }
 
 object Kotlin {
-    const val version = "1.5.10"
+    const val version = "1.6.0"
     const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
 
     object Coroutines {
@@ -127,7 +126,7 @@ object Kotlin {
     }
 
     object Logging {
-        const val version = "2.0.8"
+        const val version = "2.0.11"
         const val kotlinLogging = "io.github.microutils:kotlin-logging:$version"
     }
 }
@@ -153,7 +152,7 @@ object Kotlinx {
 }
 
 object Ktor {
-    const val version = "1.6.0"
+    const val version = "1.6.6"
     const val server = "io.ktor:ktor-server:$version"
     const val serverNetty = "io.ktor:ktor-server-netty:$version"
     const val auth = "io.ktor:ktor-auth:$version"
@@ -165,7 +164,7 @@ object Ktor {
 }
 
 object Log4j2 {
-    const val version = "2.14.1"
+    const val version = "2.17.0"
     const val api = "org.apache.logging.log4j:log4j-api:$version"
     const val core = "org.apache.logging.log4j:log4j-core:$version"
     const val slf4j = "org.apache.logging.log4j:log4j-slf4j-impl:$version"
@@ -195,7 +194,7 @@ object Moshi {
 }
 
 object Mockk {
-    const val version = "1.11.0"
+    const val version = "1.12.1"
     const val mockk = "io.mockk:mockk:$version"
 }
 
@@ -217,7 +216,7 @@ object Prometheus {
     }
 }
 
-const val RapidAndRivers = "com.github.navikt:rapids-and-rivers:20210617121814-3e67e4d"
+const val RapidAndRivers = "com.github.navikt:rapids-and-rivers:2022.02.08-20.42.8e24a34a2ecd"
 
 object Slf4j {
     const val version = "1.7.25"
@@ -225,7 +224,7 @@ object Slf4j {
 }
 
 object Ktlint {
-    const val version = "0.38.1"
+    const val version = "0.43.2"
 }
 
 object Spotless {
@@ -239,7 +238,7 @@ object Shadow {
 }
 
 object TestContainers {
-    const val version = "1.15.2"
+    const val version = "1.16.2"
     const val postgresql = "org.testcontainers:postgresql:$version"
     const val kafka = "org.testcontainers:kafka:$version"
 }
@@ -259,7 +258,7 @@ object Wiremock {
 }
 
 object Graphql {
-    const val version = "4.1.1"
+    const val version = "5.2.0"
     const val graphql = "com.expediagroup.graphql"
     val client = library("client")
     fun library(name: String) = "com.expediagroup:graphql-kotlin-$name:$version"
